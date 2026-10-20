@@ -1,0 +1,22 @@
+<!-- Event Binding () -->
+<h1>Event Binding</h1>
+
+ <!-- simple javascript ke through increment-->
+
+<button (click)="incrementsimple()">Simple Increment</button> 
+ <p>Count: {{ countsimple }}</p>
+
+ <!-- single ke through increment-->
+<button (click)="increment()">Signal Increment</button>
+<p>Count: {{ count() }}</p>
+
+<button (click)="showEvent($event)">Show Event</button>
+<br>
+
+<input type="text" (input)="updateUsername($event.target.value)" placeholder="Type something...">
+<p>Username: {{ username }}</p>
+
+<form (submit)="handleFormSubmit($event)">
+    <input type="text">
+    <button type="submit">Submit</button>
+</form>
